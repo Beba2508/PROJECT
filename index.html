@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logistika Posteljine</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at top, #0a0a0f, #000000);
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #ff4fa3;
+      text-shadow: 0 0 20px rgba(255,79,163,0.8);
+    }
+
+    .soon {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+      color: #999;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      animation: blink 2s infinite;
+    }
+
+    .subtext {
+      font-size: 1rem;
+      margin-bottom: 2.5rem;
+      color: #aaa;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .btn {
+      padding: 1.5rem 3rem;
+      font-size: 1.5rem;
+      border: 2px solid #ff4fa3;
+      background: rgba(255,79,163,0.05);
+      color: #ff4fa3;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 79, 163, 0.3);
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn:hover {
+      background: #ff4fa3;
+      color: #000;
+      box-shadow: 0 0 30px rgba(255, 79, 163, 0.9);
+      transform: scale(1.08);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 0.8rem;
+      color: #777;
+      letter-spacing: 1px;
+    }
+
+    iframe {
+      margin-top: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+
+    /* Moving background particles */
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: float 14s linear infinite;
+    }
+
+    .pink { background: #ff4fa3; box-shadow: 0 0 15px rgba(255,79,163,0.9); }
+    .purple { background: #9b4dff; box-shadow: 0 0 15px rgba(155,77,255,0.9); }
+    .blue { background: #4d9bff; box-shadow: 0 0 15px rgba(77,155,255,0.9); }
+
+    @keyframes float {
+      from { transform: translateY(100vh) scale(0.6); opacity: 0; }
+      20% { opacity: 1; }
+      to { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Logistika Posteljine</h1>
+  <div class="soon">SOON....</div>
+  <div class="subtext">A dok čekate, opustite se uz najveće hitove</div>
+
+  <div class="buttons">
+    <a href="https://irundo.com/rentlioapi/logistikaposteljine/index.html" class="btn">Application</a>
+    <a href="https://sites.google.com/zigzag.hr/self-dostava?usp=sharing" class="btn">Upute</a>
+  </div>
+
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4COOrHJ2UkSFXI1dhNEZzV?utm_source=generator" width="300" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+  <footer>Made by Beba &amp; Seka</footer>
+
+  <!-- background particles with mixed colors -->
+  <div class="particle pink" style="width:10px;height:10px;left:15%;animation-duration:12s;"></div>
+  <div class="particle purple" style="width:14px;height:14px;left:40%;animation-duration:18s;"></div>
+  <div class="particle blue" style="width:8px;height:8px;left:65%;animation-duration:11s;"></div>
+  <div class="particle pink" style="width:12px;height:12px;left:85%;animation-duration:16s;"></div>
+  <div class="particle purple" style="width:9px;height:9px;left:25%;animation-duration:15s;"></div>
+  <div class="particle blue" style="width:7px;height:7px;left:75%;animation-duration:13s;"></div>
+</body>
+</html>
