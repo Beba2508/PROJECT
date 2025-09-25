@@ -82,10 +82,19 @@
       letter-spacing: 1px;
     }
 
-    iframe {
+    .spotify-container {
       margin-top: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(255,79,163,0.6);
+      width: 80%;
+      max-width: 800px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 380px;
+      border: none;
     }
 
     /* Moving background particles */
@@ -110,14 +119,16 @@
 <body>
   <h1>Logistika Posteljine</h1>
   <div class="soon">SOON....</div>
-  <div class="subtext">A dok čekate, opustite se uz najveće hitove</div>
+  <div class="subtext">A dok čekate, opustite se uz najveće hitove organizirane s ljubavlju HC teama</div>
 
   <div class="buttons">
-    <a href="https://irundo.com/rentlioapi/logistikaposteljine/index.html" class="btn">Application</a>
-    <a href="https://sites.google.com/zigzag.hr/self-dostava?usp=sharing" class="btn">Upute</a>
+    <a href="https://irundo.com/rentlioapi/logistikaposteljine/index.html" class="btn">App (nije gotovo)</a>
+    <a href="https://sites.google.com/zigzag.hr/self-dostava?usp=sharing" class="btn">Upute (nisu gotove)</a>
   </div>
 
-  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4COOrHJ2UkSFXI1dhNEZzV?utm_source=generator" width="300" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  <div class="spotify-container">
+    <iframe src="https://open.spotify.com/embed/playlist/4COOrHJ2UkSFXI1dhNEZzV?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
 
   <footer>Made by Beba &amp; Seka</footer>
 
